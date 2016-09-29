@@ -15,22 +15,21 @@ function main(){
 	$(".button").click(function(){
 	// 2. dans le callback récupérez le data attribute animal
 		var animalType = $(this).data('animal');
-		console.log(animalType);
+		//console.log(animalType);
 	// 3. récupérerez dans l'objet species la valeur correspond à l'attribut récupéré
 		var photo=(species[animalType]);
-		console.log(photo);
+		//console.log(photo);
 
 	// 4. ajoutez élément img en assignant à son attibut src la valeur précédemment récupérée
 	
 		$("img").attr('src', 'img/'+photo); //source et chemin
-		
+
 	// 5. inserez cet élément dans l'élément ayant l'id holder
 
 
 	});
 
 	
-	// 
 	// Conseils : avancez étape par étape, console.log et debugger autant que nécessaires !
 	
 	
